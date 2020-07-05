@@ -1,0 +1,370 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi Hat"
+Date "2020-06-25"
+Rev "v1"
+Comp ""
+Comment1 "Designed by Niketa"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R4
+U 1 1 5EFBD614
+P 9350 3175
+F 0 "R4" H 9420 3221 50  0000 L CNN
+F 1 "560Ω" H 9420 3130 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9280 3175 50  0001 C CNN
+F 3 "~" H 9350 3175 50  0001 C CNN
+	1    9350 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5EFBD96C
+P 9350 3725
+F 0 "D2" H 9343 3942 50  0000 C CNN
+F 1 "LED" H 9343 3851 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9350 3725 50  0001 C CNN
+F 3 "~" H 9350 3725 50  0001 C CNN
+	1    9350 3725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 3325 9350 3575
+$Comp
+L power:GND #PWR01
+U 1 1 5EFC1913
+P 9350 4075
+F 0 "#PWR01" H 9350 3825 50  0001 C CNN
+F 1 "GND" H 9355 3902 50  0000 C CNN
+F 2 "" H 9350 4075 50  0001 C CNN
+F 3 "" H 9350 4075 50  0001 C CNN
+	1    9350 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3875 9350 4075
+Text GLabel 9550 3025 2    50   Input ~ 0
+5V
+Wire Wire Line
+	9550 3025 9350 3025
+Wire Wire Line
+	1375 2850 1525 2850
+Wire Wire Line
+	1525 2850 1625 2850
+Connection ~ 1525 2850
+Wire Wire Line
+	1525 2600 1525 2850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EFB36F1
+P 1525 2600
+F 0 "#FLG0101" H 1525 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 1525 2773 50  0000 C CNN
+F 2 "" H 1525 2600 50  0001 C CNN
+F 3 "~" H 1525 2600 50  0001 C CNN
+	1    1525 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1375 2850 0    50   Input ~ 0
+5V
+Wire Wire Line
+	2750 2850 2800 2850
+Connection ~ 2750 2850
+Wire Wire Line
+	2225 2850 2750 2850
+Text GLabel 2800 2850 2    50   Input ~ 0
+button_input
+Wire Wire Line
+	2750 3600 2750 3825
+$Comp
+L power:GND #PWR0104
+U 1 1 5EFAC60D
+P 2750 3825
+F 0 "#PWR0104" H 2750 3575 50  0001 C CNN
+F 1 "GND" H 2755 3652 50  0000 C CNN
+F 2 "" H 2750 3825 50  0001 C CNN
+F 3 "" H 2750 3825 50  0001 C CNN
+	1    2750 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 2850 1625 2950
+Connection ~ 1625 2850
+Wire Wire Line
+	1625 2950 1725 2950
+Wire Wire Line
+	1625 2750 1625 2850
+Wire Wire Line
+	1725 2750 1625 2750
+Wire Wire Line
+	2750 3300 2750 2850
+Wire Wire Line
+	2225 2850 2225 2950
+Connection ~ 2225 2850
+Wire Wire Line
+	2225 2750 2225 2850
+Wire Wire Line
+	2225 2950 2125 2950
+Wire Wire Line
+	2125 2750 2225 2750
+$Comp
+L Device:R R1
+U 1 1 5EF4D3AC
+P 2750 3450
+F 0 "R1" H 2820 3496 50  0000 L CNN
+F 1 "10kΩ" H 2820 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 3450 50  0001 C CNN
+F 3 "~" H 2750 3450 50  0001 C CNN
+	1    2750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 5EF4B275
+P 1925 2850
+F 0 "SW1" H 1925 3175 50  0000 C CNN
+F 1 "SW_DPST" H 1925 3084 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 1925 2850 50  0001 C CNN
+F 3 "~" H 1925 2850 50  0001 C CNN
+	1    1925 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4375 2825 0    50   Input ~ 0
+5V
+Text GLabel 6750 2025 1    50   Input ~ 0
+5V
+Text GLabel 6150 2425 0    50   Input ~ 0
+button_input
+Wire Wire Line
+	8275 3925 8275 4200
+Wire Wire Line
+	4750 4000 4750 4600
+Connection ~ 4750 4000
+Wire Wire Line
+	4825 4000 4750 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 5EFA99B7
+P 4750 4600
+F 0 "#PWR0101" H 4750 4350 50  0001 C CNN
+F 1 "GND" H 4755 4427 50  0000 C CNN
+F 2 "" H 4750 4600 50  0001 C CNN
+F 3 "" H 4750 4600 50  0001 C CNN
+	1    4750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3800 4750 4000
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5EF479BF
+P 6950 3325
+F 0 "J1" H 7175 4875 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 7250 4750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 6950 3325 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6950 3325 50  0001 C CNN
+	1    6950 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EF988B2
+P 4825 4000
+F 0 "#FLG0102" H 4825 4075 50  0001 C CNN
+F 1 "PWR_FLAG" V 4825 4128 50  0000 L CNN
+F 2 "" H 4825 4000 50  0001 C CNN
+F 3 "~" H 4825 4000 50  0001 C CNN
+	1    4825 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 4750 6650 4750
+Connection ~ 6600 4750
+Wire Wire Line
+	6600 4800 6600 4750
+Wire Wire Line
+	6650 4750 6650 4625
+Wire Wire Line
+	6550 4750 6600 4750
+Wire Wire Line
+	6550 4625 6550 4750
+$Comp
+L power:GND #PWR0103
+U 1 1 5EFA1EEF
+P 8275 4200
+F 0 "#PWR0103" H 8275 3950 50  0001 C CNN
+F 1 "GND" H 8280 4027 50  0000 C CNN
+F 2 "" H 8275 4200 50  0001 C CNN
+F 3 "" H 8275 4200 50  0001 C CNN
+	1    8275 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EFA187F
+P 6600 4800
+F 0 "#PWR0102" H 6600 4550 50  0001 C CNN
+F 1 "GND" H 6605 4627 50  0000 C CNN
+F 2 "" H 6600 4800 50  0001 C CNN
+F 3 "" H 6600 4800 50  0001 C CNN
+	1    6600 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6150 4025
+NoConn ~ 6150 3925
+NoConn ~ 6150 3825
+NoConn ~ 6150 3725
+NoConn ~ 6150 3625
+NoConn ~ 6150 3525
+NoConn ~ 6150 3325
+NoConn ~ 6150 3225
+NoConn ~ 6150 3125
+NoConn ~ 6150 2925
+NoConn ~ 6150 2725
+NoConn ~ 6150 2525
+NoConn ~ 6850 2025
+NoConn ~ 7050 2025
+NoConn ~ 7150 2025
+NoConn ~ 7750 2425
+NoConn ~ 7750 2525
+NoConn ~ 7750 2725
+NoConn ~ 7750 2825
+NoConn ~ 7750 3125
+NoConn ~ 7750 3225
+NoConn ~ 7750 3425
+NoConn ~ 7750 3525
+NoConn ~ 7750 3625
+NoConn ~ 7750 3725
+NoConn ~ 7750 3825
+NoConn ~ 7750 4025
+NoConn ~ 7750 4125
+NoConn ~ 7250 4625
+NoConn ~ 7150 4625
+NoConn ~ 7050 4625
+NoConn ~ 6950 4625
+NoConn ~ 6850 4625
+NoConn ~ 6750 4625
+Wire Wire Line
+	8275 3325 8275 3625
+Wire Wire Line
+	7750 3025 8275 3025
+$Comp
+L Device:R R3
+U 1 1 5EF4C7A2
+P 8275 3175
+F 0 "R3" H 8345 3221 50  0000 L CNN
+F 1 "560Ω" H 8345 3130 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8205 3175 50  0001 C CNN
+F 3 "~" H 8275 3175 50  0001 C CNN
+	1    8275 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EF4E069
+P 8275 3775
+F 0 "D1" H 8268 3992 50  0000 C CNN
+F 1 "LED" H 8268 3901 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8275 3775 50  0001 C CNN
+F 3 "~" H 8275 3775 50  0001 C CNN
+	1    8275 3775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensor:DHT11 U1
+U 1 1 5EF4EF63
+P 4750 3500
+F 0 "U1" H 4506 3546 50  0000 R CNN
+F 1 "DHT22" H 4506 3455 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4750 3100 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 4900 3750 50  0001 C CNN
+	1    4750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EF4D658
+P 5250 2825
+F 0 "R2" V 5175 2775 50  0000 L CNN
+F 1 "10kΩ" V 5100 2725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5180 2825 50  0001 C CNN
+F 3 "~" H 5250 2825 50  0001 C CNN
+	1    5250 2825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2825 5725 2825
+Wire Wire Line
+	4750 3200 4750 2825
+Wire Wire Line
+	4375 2825 4750 2825
+Connection ~ 4750 2825
+Wire Wire Line
+	4750 2825 5100 2825
+Wire Wire Line
+	5050 3500 5725 3500
+Wire Wire Line
+	5725 3500 5725 2825
+Connection ~ 5725 2825
+Wire Wire Line
+	5725 2825 6150 2825
+Wire Notes Line
+	1000 5750 3500 5750
+Wire Notes Line
+	3500 5750 3500 1925
+Wire Notes Line
+	3500 1925 1000 1925
+Wire Notes Line
+	1000 2075 975  2075
+Wire Notes Line
+	1000 1925 1000 5750
+Wire Notes Line
+	5925 1925 5925 5725
+Wire Notes Line
+	5925 5725 3675 5725
+Wire Notes Line
+	3675 5725 3675 1925
+Wire Notes Line
+	3675 1925 5925 1925
+Wire Notes Line
+	6025 5725 7925 5725
+Wire Notes Line
+	7925 5725 7925 1700
+Wire Notes Line
+	7925 1700 6025 1700
+Wire Notes Line
+	6025 1700 6025 5725
+Wire Notes Line
+	8025 1850 8025 5725
+Wire Notes Line
+	8025 5725 8850 5725
+Wire Notes Line
+	8850 5725 8850 1850
+Wire Notes Line
+	8850 1850 8025 1850
+Wire Notes Line
+	8950 1850 8950 5725
+Wire Notes Line
+	8950 5725 10025 5725
+Wire Notes Line
+	10025 5725 10025 1850
+Wire Notes Line
+	8950 1850 10025 1850
+Text Notes 1150 1800 0    59   ~ 0
+Push Button Switch
+Text Notes 3950 1800 0    59   ~ 0
+Temperature and\nHumidity Sensor
+Text Notes 6225 1600 0    59   ~ 0
+Raspberry Pi
+Text Notes 8250 1775 0    59   ~ 0
+Indicator\nLED
+Text Notes 9175 1750 0    59   ~ 0
+Power\nLED
+$EndSCHEMATC
