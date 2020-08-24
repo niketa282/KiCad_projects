@@ -1,0 +1,11 @@
+1 Battery (multiple cells) DONE
+2 Polarised Capacitor DONE
+3 Two Capacitors DONE
+4 Led Generic DONE
+5 Generic Connector, single row, 01x09
+6 Generic Connector, single row, 01x04
+7 Generic Connector, double row, 02x03
+8 Generic Connector, single row, 01x04
+9 Two Resistors DONE
+10 I2C Serial EEPROM, 1024kb, DIP-8/SOIC-8/TSSOP-8/DFN-8
+11 Clock/timer IC
